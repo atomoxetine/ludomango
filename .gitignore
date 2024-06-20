@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+src/assets/tailwind.css
+
+# Added by cargo
+
+/target
