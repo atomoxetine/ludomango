@@ -11,8 +11,11 @@ build:
 	NODE_ENV=production npx tailwindcss -c ./tailwind.config.js -o ./src/assets/tailwind.css --minify
 	cargo build --release
 
+test:
+	cargo test --verbose
+
 lint:
-	cargo clippy
+	cargo clippy -- -D clippy::all
 
 dev-nightly:
 	RUSTFLAGS="-Z threads=8" cargo watch -x run
