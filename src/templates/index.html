@@ -9,8 +9,15 @@
   <script>
     $('#btn').mousedown(() => {
       let crr = parseInt($('#counter').html())
-      $('#counter').html(crr+1)
+      $('#counter').html(crr + 1)
     })
   </script>
+  <hr>
+  <div>
+    <h2>Game:</h2>
+    <pre>
+      {{ game }}
+    </pre>
+  </div>
 </div>
 {% endblock body %}
