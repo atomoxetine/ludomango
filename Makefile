@@ -12,7 +12,7 @@ build:
 	cargo build --release
 
 test:
-	cargo test --verbose
+	cargo test
 
 lint:
 	cargo clippy -- -D clippy::all
